@@ -12,13 +12,13 @@ namespace IML_SHT35 {
     //% block="温度"
     //% weight=100    
     export function getTemp(): number {
-        return gettemp()
+        return Math.round(gettemp() * 10) / 10
     }
     //% block
     //% block="湿度"
     //% weight=100    
     export function getHum(): number {
-        return gethum()
+        return Math.round(gethum() * 10) / 10
     }
 
     // I2C 書き込み関数
