@@ -1,6 +1,6 @@
 {
     "name": "SHT35",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "GROVE 温湿度センサ　I2C High Accuracy Temp&Humi Sensor (SHT35) v1.0",
     "dependencies": {
         "core": "*",
