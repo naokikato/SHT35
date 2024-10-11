@@ -1,7 +1,7 @@
 /**
  * Custom blocks
  */
-//% weight=100 color=#0fbc11 icon="" block="SHT35"
+//% weight=100 color=#0fbc11 icon="" block="温湿度センサ(SHT35)"
 namespace IML_SHT35 {
 
     let temperature = 0
