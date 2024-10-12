@@ -4,8 +4,6 @@
 //% weight=100 color=#0fbc11 icon="" block="温湿度センサ(SHT35)"
 namespace IML_SHT35 {
 
-    let temperature = 0
-    let humidity = 0
     let I2C_ADDR = 0x45
 
     //% block
@@ -49,8 +47,8 @@ namespace IML_SHT35 {
         data = i2cRead(6)
 
         // 温度データを計算
-        let tempData = (data[0] << 8) | data[1]
-        temperature = -45.0 + (175.0 * tempData / 65535.0)
+        let temperature = (data[0] << 8) | data[1]
+        temperature = -45.0 + (175.0 * temperature / 65535.0)
         return temperature;
     }
     function gethum() : number {
